@@ -1,0 +1,175 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #f1f5f9;
+  font-size: 16px;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.app {
+  padding: 20px;
+}
+
+/* App Header */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #88ABFF;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.app-header h1 {
+  font-size: 24px;
+}
+
+.app-header nav button {
+  margin: 0 10px;
+  padding: 5px 15px;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.app-header nav input {
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+/* Note Form */
+.note-form {
+  margin: 20px 0;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.note-form input,
+.note-form textarea,
+.note-form select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.note-form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.note-form button {
+  width: 100%;
+  padding: 10px;
+  background: #6a93f8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Notes Container */
+.notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Individual Note */
+.note {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.note:hover {
+  transform: translateY(-10px);
+}
+
+/* Important Notes */
+.note.important {
+  background: #F7E06A;
+  border: 2px solid #0111;
+}
+
+/* Completed Notes */
+.note.completed h3,
+.note.completed p {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Deadline Highlight */
+.note span.deadline {
+  font-size: 14px;
+  color: #f44336;
+  font-weight: bold;
+}
+
+/* Note Text */
+.note h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.note p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.note span {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Note Actions */
+.note-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.note-actions button {
+  background: transparent;
+  border: none;
+  color: #88ABFF;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.note-actions button:hover {
+  color: #6A93F8;
+}
+
+/* Form Adjustments for Deadline */
+.note-form select,
+.note-form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Editing Note Highlight */
+.note.editing {
+  border: 2px dashed #6A93F8;
+  background: #e3f2fd;
+}
