@@ -3,8 +3,7 @@
 ## Description
 
 This Notes App allows users to create, edit, delete, and filter notes based on their title, description, category (Work or Personal), importance, and completion status. The app uses local storage to persist data, ensuring that notes are saved even after the page is refreshed. It also includes a search bar to filter notes dynamically based on user input.
-
-https://github.com/azimatalantbek/Note-app/blob/main/images/Screenshot%202024-12-30%20144700.png?raw=true
+![Screenshot 2024-12-30 144700](https://github.com/user-attachments/assets/738df3b2-9cc3-4197-98c6-293bf79c4b22)
 
 ## Features
 
